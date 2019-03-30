@@ -1,0 +1,11 @@
+#!/bin/sh
+
+tmpdir=/tmp/$LOGNAME/mutt_attach
+mkdir -p $tmpdir
+rm -f $tmpdir/*
+
+openwith=$1
+filename=`basename $2`
+newfile=$tmpdir/$filename
+cp $2 $newfile
+open -a "$openwith" $newfile
