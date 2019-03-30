@@ -5,6 +5,7 @@ This script will allow you to safely view MIME content in mutt on Mac OS.
 ## Installation
 
 ```sh
+chmod 0755 muttview
 cp -p muttview (somewhere in your $PATH, e.g., ~/opt/bin)
 ```
 
